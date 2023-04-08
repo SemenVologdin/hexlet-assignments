@@ -33,7 +33,7 @@ class InMemoryKV implements KeyValueStorage {
 
     @Override
     public Map<String, String> toMap() {
-        return this.map;
+        return new HashMap<>(this.map);
     }
 }
 // END
